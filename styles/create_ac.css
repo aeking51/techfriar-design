@@ -58,7 +58,7 @@ header{
 }
 
 body{
-    background: url(./resources/bg_frame.png),#2E333A;
+    background: url(../resources/bg_frame.png),#2E333A;
     background-position-y: 200px;
     background-blend-mode: normal;
     background-repeat: repeat-x; /*  overlay hard light*/
