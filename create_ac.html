@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techfriar | Create New Account</title>
+    <link rel="icon" type="text/x-icon" href="resources/techfriar_icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="styles/create_ac.css">
+</head>
+<body>
+    <header>
+        <div class="header-inside">
+            <!-- Fixed Navbar -->
+            <div class="header-left">
+                <img src="resources/techfriar_logo.png" alt="Company Logo">
+            </div>
+            <div class="header-right">
+                <a href="index.html" class="sign-in">Sign In</a>
+                <a href="/"><img src="resources/Discord.png" alt="Discord" class="discord"></a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <div class="container_1">
+            <!-- first section of page containing company description and create account link -->
+            <div class="card_1">
+                <h2 class="card_title_1">
+                    Year’s end is neither an end nor a beginning but a going on.
+                </h2>
+                <p class="card_title_2">
+                    Join us to celebrate the last night of the year across the country.
+                </p>
+                <button class="create_btn" href="create_ac.html">Create account</button>
+                <div class="profiles" >
+                    <div class="profile-icons" style="display: inline-block; vertical-align: middle; line-height: 1;">
+                        <img src="resources/Group 147.svg" alt="Person1">
+                    </div>
+                    <div class="no-of-reg" style="display: inline-block; ">
+                        <p class="registrations-style">+ 23547 registrations</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container number two containing motive of company -->
+            <div class="container_2">
+                <div class="def_1">
+                    <h4 class="def_head"><img src="resources/Vector.png" alt="" style="margin-right: 20px; vertical-align: middle;">A single source of truth</h4>
+                    <p class="def_body">When you add work to your 
+                        Slate calendar we automatically 
+                        calculate useful insights 
+                    </p>
+                </div>
+                <div class="def_1">
+                    <h4 class="def_head"><img src="resources/Vector (1).png" alt="" style="margin-right: 20px; vertical-align: middle;">Intuitive interface</h4>
+                    <p class="def_body">When you add work to your 
+                        Slate calendar we automatically 
+                        calculate useful insights 
+                    </p>
+                </div>
+                <div class="def_1">
+                    <h4 class="def_head"><img src="resources/Vector (2).png" alt="" style="margin-right: 20px; vertical-align: middle;">Or with rules</h4>
+                    <p class="def_body">
+                        When you add work to your 
+                        Slate calendar we automatically 
+                        calculate useful insights
+                    </p>
+                </div>
+            </div>
+
+
+            
+        </div>
+        <div class="container_create_ac">
+            <!-- Account creation form with password -->
+            <div class="card_create_ac">
+                <h4 style="text-align: center; font-size: 25px;">Add New Account</h4><br><br>
+
+                <div class="row">
+
+                    <div class="col">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Delwin Tharayil">
+                    </div>
+
+                    <div class="col">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="tharayildelwin@gmail.com">
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+                        <label for="org">Organisation</label>
+                        <input type="text" name="org" id="org" placeholder="Tech Spark">
+                    </div>
+
+                    <div class="col">
+                        <label for="role">Role</label>
+                        <div class="select">
+                            <select name="role" id="role">
+                                <option value="Scholar" class="option">Scholar</option>
+                                <option value="Team lead" class="option">Team lead</option>
+                                <option value="Manager" class="option">Manager</option>
+                            </select>
+                            <span class="custom_arrow"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col">
+                        <label for="password">Password</label>
+                        <div class="select">
+                            <input type="password" name="password" id="password" placeholder="400Tharayil001@Axie">
+                            <i class="fa-solid fa-eye-slash" id="showPassword"></i><!-- font awesome icon for password hiding and showing as button using exterbnal JS -->
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="select">
+                            <input type="password" name="confirm-password" id="confirm-password" placeholder="400Tharayil001@Axie"><br>
+                            <i class="fa-solid fa-eye-slash" id="showConfirmPassword"></i> 
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-txtarea">
+                        <label for="profile-summary">Profile Summary</label><br>
+                        <textarea name="profile-summary" id="profile-summary" cols="30" rows="10" placeholder="Axie Infinity is a trading and battling game that allows players to collect, breed, raise, battle, and trade creatures known as 'Axies' (characters based on axolotl), which are digitized as NFTs. As of September 2021, the majority of players were based in the"></textarea>        
+                    </div>
+
+                </div>
+                <a href="index.html" class="already_account">Already have an account ?</a>
+                <div class="centralise">
+                    <input type="submit" value="Sign In" class="sign-in-form-btn">
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+    <!-- external script and font awesome CDN -->
+    <script src="scripts/script.js"></script>
+    <script src="https://kit.fontawesome.com/efeb1e1c3a.js" crossorigin="anonymous"></script>
+</body>
+</html>
