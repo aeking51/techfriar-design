@@ -11,13 +11,13 @@
 <body>
     <header>
         <div class="header-inside">
-            <!-- Fixed Navbar -->
+        <!-- fixed navbar with company logo ,sign in and discord button using position fixed-->        
             <div class="header-left">
-                <img src="resources/techfriar_logo.png" alt="Company Logo" width="200px" height="61px">
+                <img src="resources/techfriar_logo.png" alt="Company Logo">
             </div>
             <div class="header-right">
-                <a href="index.html" class="sign-in">Sign In</a>
-                <a href="/"><img src="resources/Discord.png" alt="Discord" class="discord" width="36px" height="35px"></a>
+                <a href="index.html#container_sign_in" class="sign-in">Sign In</a> <!-- Company Logo -->
+                <a href="/"><img src="resources/Discord.png" alt="Discord" class="discord"></a><!--Sign in button-->
             </div>
         </div>
     </header>
@@ -28,16 +28,18 @@
         <div class="container_1">
             <!-- first section of page containing company description and create account link -->
             <div class="card_1">
+                <!-- Titles -->
                 <h2 class="card_title_1">
                     Year’s end is neither an end nor a beginning but a going on.
                 </h2>
                 <p class="card_title_2">
                     Join us to celebrate the last night of the year across the country.
                 </p>
-                <button class="create_btn" href="create_ac.html">Create account</button>
-                <div class="profiles" >
+                <!-- Create account Button -->
+                <a href="#container_create_ac"><button type="button" class="create_btn">Create account</button></a>
+                <div class="profiles"><!--Profile pictures using svg-->
                     <div class="profile-icons" style="display: inline-block; vertical-align: middle; line-height: 1;">
-                        <img src="resources/Group 147.svg" alt="Person1" width="85px" height="45px">
+                        <img src="resources/Group 147.svg" alt="Person1">
                     </div>
                     <div class="no-of-reg" style="display: inline-block; ">
                         <p class="registrations-style">+ 23547 registrations</p>
@@ -47,22 +49,25 @@
 
             <!-- Container number two containing motive of company -->
             <div class="container_2">
+                <!-- motive one -->
                 <div class="def_1">
-                    <h4 class="def_head"><img src="resources/Vector.png" alt="Spoons Crossed" style="margin-right: 20px; vertical-align: middle;" width="29px" height="29px">A single source of truth</h4>
+                    <h4 class="def_head"><img src="resources/Vector.png" alt="" style="margin-right: 20px; vertical-align: middle;">A single source of truth</h4>
                     <p class="def_body">When you add work to your 
                         Slate calendar we automatically 
                         calculate useful insights 
                     </p>
                 </div>
                 <div class="def_1">
-                    <h4 class="def_head"><img src="resources/Vector (1).png" alt="alien" style="margin-right: 20px; vertical-align: middle;" width="29px" height="29px">Intuitive interface</h4>
+                    <!-- motive two -->
+                    <h4 class="def_head"><img src="resources/Vector (1).png" alt="" style="margin-right: 20px; vertical-align: middle;">Intuitive interface</h4>
                     <p class="def_body">When you add work to your 
                         Slate calendar we automatically 
                         calculate useful insights 
                     </p>
                 </div>
                 <div class="def_1">
-                    <h4 class="def_head"><img src="resources/Vector (2).png" alt="infinity" style="margin-right: 20px; vertical-align: middle;" width="29px" height="29px">>Or with rules</h4>
+                    <!-- motive three -->
+                    <h4 class="def_head"><img src="resources/Vector (2).png" alt="" style="margin-right: 20px; vertical-align: middle;">Or with rules</h4>
                     <p class="def_body">
                         When you add work to your 
                         Slate calendar we automatically 
@@ -74,18 +79,18 @@
 
             
         </div>
-        <div class="container_create_ac">
-            <!-- Account creation form with password -->
-            <div class="card_create_ac">
+        <div class="container_create_ac" id="container_create_ac">
+            <!-- Account creation form with password hiding and showing-->
+            <div class="card_create_ac" id="card_create_ac">
                 <h4 style="text-align: center; font-size: 25px;">Add New Account</h4><br><br>
 
                 <div class="row">
-
+                    <!-- name input section -->
                     <div class="col">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" placeholder="Delwin Tharayil">
                     </div>
-
+                    <!-- email input section -->
                     <div class="col">
                         <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="tharayildelwin@gmail.com">
@@ -115,36 +120,37 @@
                 </div>
 
                 <div class="row">
-
+                    <!-- password input section with password visibility toggling -->
                     <div class="col">
                         <label for="password">Password</label>
                         <div class="select">
                             <input type="password" name="password" id="password" placeholder="400Tharayil001@Axie">
-                            <i class="fa-solid fa-eye-slash" id="showPassword"></i><!-- font awesome icon for password hiding and showing as button using exterbnal JS -->
+                            <i class="fa-solid fa-eye-slash" id="showPassword"></i><!-- font awesome icon button for password hiding and showing as button using external JS -->
                         </div>
                     </div>
 
                     <div class="col">
+                        <!-- confirm password input section with password visibility toggling -->
                         <label for="confirm-password">Confirm Password</label>
                         <div class="select">
                             <input type="password" name="confirm-password" id="confirm-password" placeholder="400Tharayil001@Axie"><br>
-                            <i class="fa-solid fa-eye-slash" id="showConfirmPassword"></i> 
+                            <i class="fa-solid fa-eye-slash" id="showConfirmPassword"></i> <!--password visibility toggle button -->
                         </div>
                     </div>
 
                 </div>
 
                 <div class="row">
-
+                    <!-- profile summary input section with fixed textarea -->
                     <div class="col-txtarea">
                         <label for="profile-summary">Profile Summary</label><br>
                         <textarea name="profile-summary" id="profile-summary" cols="30" rows="10" placeholder="Axie Infinity is a trading and battling game that allows players to collect, breed, raise, battle, and trade creatures known as 'Axies' (characters based on axolotl), which are digitized as NFTs. As of September 2021, the majority of players were based in the"></textarea>        
                     </div>
 
                 </div>
-                <a href="index.html" class="already_account">Already have an account ?</a>
+                <a href="index.html#container_sign_in" class="already_account">Already have an account ?</a><br><br><br><!-- sign in form link -->
                 <div class="centralise">
-                    <input type="submit" value="Sign In" class="sign-in-form-btn">
+                    <input type="submit" value="Create account" class="sign-in-form-btn">
                 </div>
             </div>
         </div>
